@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Libre+Barcode+39+Text|Poppins:300i,500,600');
+
+/* FONT REFRENCE ONLY - MY PREFRENCE AS MANY DONT LIKE TO ADD THESE :) 
+		font-family: 'Libre Barcode 128 Text', cursive;
+		font-family: 'Libre Barcode 39 Text', cursive;
+		font-family: 'Poppins', sans-serif;
+		*/
+
+
+*{
+		box-sizing: border-box;
+		}
+
+
+/*BODY*/
+body{
+			margin: 0;
+			font-family: 'Poppins' , sans-serif;
+			font-size: 1em;
+			color: white;
+			z-index: 3;
+			border: solid red 20px;
+			}
+
+
+/*ELEMENTS*/
+h1{
+			font-family: 'Libre Barcode 128 Text', cursive;
+			font-size: 6em;
+			text-align: center;
+			margin:auto;
+			color: darkred;
+			}
+
+h2{
+			font-family: 'Poppins' , sans-serif;
+			font-size: 1em;
+			color: whitesmoke;
+			text-align: center;
+			}
+
+p{
+			font-family: 'Poppins' , sans-serif;
+			color: black;
+			font-style: 300i;
+			font-size: 1em;
+			padding: 25px;
+			margin-bottom: 5px;
+			text-align: center;
+			line-height: .25em;
+			}
+
+a h1{
+			color: black;
+			}
+
+a h1:link {
+ 		text-decoration: none;
+			}
+
+a h1:visited {
+			color: lightgrey;
+			text-decoration: none;
+			}
+
+a h1:hover {
+		color: red;
+		text-decoration: none;
+		}
+
+
+
+/*CUSTOM */
+
+
+
+
+/*FOOTER*/
+footer{
+				margin:auto;
+				bottom: 0;
+				align-content: center;
+				font-size: .75em;
+				padding: 10px;
+				background: white;
+				}
+
+
+
