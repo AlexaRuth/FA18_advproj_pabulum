@@ -17,9 +17,8 @@ body{
 			margin: 0;
 			font-family: 'Poppins' , sans-serif;
 			font-size: 1em;
-			color: white;
-			z-index: 3;
-			border: solid red 20px;
+			color: darkgrey;
+			border: solid white 5px;
 			}
 
 
@@ -29,13 +28,13 @@ h1{
 			font-size: 6em;
 			text-align: center;
 			margin:auto;
-			color: darkred;
+			color: black;
 			}
 
 h2{
 			font-family: 'Poppins' , sans-serif;
 			font-size: 1em;
-			color: whitesmoke;
+			color: black;
 			text-align: center;
 			}
 
@@ -47,7 +46,6 @@ p{
 			padding: 25px;
 			margin-bottom: 5px;
 			text-align: center;
-			line-height: .25em;
 			}
 
 a h1{
@@ -70,12 +68,54 @@ a h1:hover {
 
 
 
-/*CUSTOM */
+/*NAVIGATION*/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: whitesmoke;}
+
+ul.topnav li a.active {background-color: dimgrey;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/*INTRO SECTION*/
+
+#intro{
+border: solid 1pt red;
+height:900px;
+
+
+
+}
+
+
 
 
 
 
 /*FOOTER*/
+/*
 footer{
 				margin:auto;
 				bottom: 0;
@@ -84,6 +124,15 @@ footer{
 				padding: 10px;
 				background: white;
 				}
+*/
 
-
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
 
