@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Libre+Barcode+39+Text|Poppins:300i,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 /* FONT REFRENCE ONLY - MY PREFRENCE AS MANY DONT LIKE TO ADD THESE :) 
-		font-family: 'Libre Barcode 128 Text', cursive;
-		font-family: 'Libre Barcode 39 Text', cursive;
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		*/
 
 
@@ -15,12 +13,14 @@
 /*BODY*/
 body{
 			margin: 0;
-			font-family: 'Poppins' , sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 1em;
 			color: darkgrey;
 			border: solid white 5px;
+/*	height: 200px;*/
+   background-color: #1349CD; /* For browsers that do not support gradients */
+   background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
 			}
-
 
 /*ELEMENTS*/
 h1{
@@ -32,34 +32,35 @@ h1{
 			}
 
 h2{
-			font-family: 'Poppins' , sans-serif;
-			font-size: 1em;
-			color: black;
-			text-align: center;
-			}
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		font-style: 700;
+		color: white;
+		text-align: center;
+		}
 
 p{
-			font-family: 'Poppins' , sans-serif;
-			color: black;
-			font-style: 300i;
-			font-size: 1em;
-			padding: 25px;
-			margin-bottom: 5px;
-			text-align: center;
-			}
+		font-family: 'Montserrat', sans-serif;
+		color: white;
+		font-style: 300;
+		font-size: 1em;
+		padding: 25px;
+		margin-bottom: 5px;
+		text-align: center;
+		}
 
 a h1{
-			color: black;
-			}
+		color: black;
+		}
 
 a h1:link {
- 		text-decoration: none;
-			}
+ 	text-decoration: none;
+		}
 
 a h1:visited {
-			color: lightgrey;
-			text-decoration: none;
-			}
+		color: lightgrey;
+		text-decoration: none;
+		}
 
 a h1:hover {
 		color: red;
@@ -71,22 +72,22 @@ a h1:hover {
 /*NAVIGATION*/
 
 ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: lightgray;
-}
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: lightgray;
+			}
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			}
 
 ul.topnav li a:hover:not(.active) {background-color: whitesmoke;}
 
@@ -101,18 +102,67 @@ ul.topnav li.right {float: right;}
 
 /*INTRO SECTION*/
 
-#intro{
-border: solid 1pt red;
-height:1200px;
+#intro{	 
+		height:900px;
+	 max-width: 80%;
+		background-color: #2E364D;
+		padding: 10px;
+		border-bottom-right-radius: 900px;
+		}
+
+.mockphone img{
+ height: 675px;
+	width: auto;
+	float: right;
+	margin-top: 175px;
 }
+
+
+#info1 h2 {
+	padding: 3px;
+	font-size: 2.5em;
+	text-align: left;
+	line-height: 1.25em;
+	position: absolute;
+	top: 300px;
+	left:150px;
+	z-index: 1px;
+	max-width: 500px;
+}
+
+#info1 p {
+	padding: 3px;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.25em;
+	position: absolute;
+	top: 430px;
+	left:150px;
+	z-index: 1px;
+	max-width: 500px;
+}
+
+/*BACKGROUND ELEMENTS*/
+
+/*
+.topbackground{
+	 max-height: 675px;
+	 max-width: 100%;
+		background-color: aqua;
+		border: 2px solid red;
+		padding: 10px;
+		border-bottom-right-radius: 300px;
+}
+*/
 
 
 /*FEATURES*/
 
 #features{
-border: solid 3pt red;
-height:1200px;
-}
+	   margin-top: 150px;
+				border: solid 3pt red;
+				height:1200px;
+				}
 
 
 .tiles {
@@ -183,7 +233,7 @@ height:1200px;
     }
 
 .tiles article > a:hover {
-    color: #ffffff !important;
+    color: mediumvioletred;
     }
 
 .tiles article > a h2 {
@@ -204,27 +254,24 @@ height:1200px;
     }
 
 .tiles article.style1 > .image:before {
-    background-color: deepskyblue;
+    background-color: mediumvioletred;
     }
 
 .tiles article.style2 > .image:before {
-    background-color: deepskyblue;
+    background-color: red;
     }
 
 .tiles article.style3 > .image:before {
-    background-color: deepskyblue;
+    background-color: yellow;
     }
 
 .tiles article.style4 > .image:before {
-    background-color: deepskyblue;
+    background-color: black;
     }
 
 .tiles article.style5 > .image:before {
-    background-color: deepskyblue;
+    background-color: white;
     }
-
-
-
 
 /*FOOTER*/
 
@@ -233,7 +280,7 @@ height:1200px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: white;
     color: white;
     text-align: center;
 }
