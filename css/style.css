@@ -67,7 +67,9 @@ a h1:hover {
 		text-decoration: none;
 		}
 
-
+img{
+	height: 25%;
+}
 
 /*NAVIGATION*/
 
@@ -76,7 +78,7 @@ ul.topnav {
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: lightgray;
+/*			background-color: lightgray;*/
 			}
 
 ul.topnav li {float: left;}
@@ -89,9 +91,9 @@ ul.topnav li a {
 			text-decoration: none;
 			}
 
-ul.topnav li a:hover:not(.active) {background-color: whitesmoke;}
+ul.topnav li a:hover:not(.active) {background-color: deeppink;}
 
-ul.topnav li a.active {background-color: dimgrey;}
+ul.topnav li a.active {background-color: rebeccapurple;}
 
 ul.topnav li.right {float: right;}
 
@@ -160,7 +162,7 @@ ul.topnav li.right {float: right;}
 
 #features{
 	   margin-top: 150px;
-				border: solid 3pt red;
+/*				border: solid 3pt red;*/
 				height:1200px;
 				}
 
@@ -168,7 +170,7 @@ ul.topnav li.right {float: right;}
 .tiles {
     display: flex;
     flex-wrap: wrap;
-    postiion: relative;
+    position: relative;
     margin: -2.5em 0 0 -2.5em;
     }
 
