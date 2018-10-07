@@ -68,38 +68,38 @@ a h1:hover {
 		}
 
 img{
-	height: 25%;
-}
+		height: 25%;
+		}
 
 /*NAVIGATION*/
 
 ul.topnav {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-/*			background-color: lightgray;*/
-			}
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+/*	background-color: lightgray;*/
+		}
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			}
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
 
-ul.topnav li a:hover:not(.active) {background-color: deeppink;}
+		ul.topnav li a:hover:not(.active) {background-color: deeppink;}
 
-ul.topnav li a.active {background-color: rebeccapurple;}
+		ul.topnav li a.active {background-color: rebeccapurple;}
 
-ul.topnav li.right {float: right;}
+		ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+		ul.topnav li.right, 
+		ul.topnav li {float: none;}
 }
 
 /*INTRO SECTION*/
@@ -113,36 +113,36 @@ ul.topnav li.right {float: right;}
 		}
 
 .mockphone img{
- height: 675px;
-	width: auto;
-	float: right;
-	margin-top: 175px;
-}
+		height: 675px;
+		width: auto;
+		float: right;
+		margin-top: 175px;
+		}
 
 
 #info1 h2 {
-	padding: 3px;
-	font-size: 2.5em;
-	text-align: left;
-	line-height: 1.25em;
-	position: absolute;
-	top: 300px;
-	left:150px;
-	z-index: 1px;
-	max-width: 500px;
-}
+		padding: 3px;
+		font-size: 2.5em;
+		text-align: left;
+		line-height: 1.25em;
+		position: absolute;
+		top: 300px;
+		left:150px;
+		z-index: 1px;
+		max-width: 500px;
+	 }
 
 #info1 p {
-	padding: 3px;
-	font-size: 1em;
-	text-align: center;
-	line-height: 1.25em;
-	position: absolute;
-	top: 430px;
-	left:150px;
-	z-index: 1px;
-	max-width: 500px;
-}
+		padding: 3px;
+		font-size: 1em;
+		text-align: center;
+		line-height: 1.25em;
+		position: absolute;
+		top: 430px;
+		left:150px;
+		z-index: 1px;
+		max-width: 500px;
+		}
 
 /*BACKGROUND ELEMENTS*/
 
