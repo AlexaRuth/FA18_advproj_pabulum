@@ -18,11 +18,29 @@
 	
 <!--NAVIGATION-->
 	<ul class="topnav">
-  <li><a class="active" href="#home">pabulum</a></li>
-  <li><a href="#news">facts</a></li>
+  <li><a class="active" href="../index.html">pabulum</a></li>
+  <li><a href="../pages/facts.html">facts</a></li>
   <li><a href="#contact">contact</a></li>
-  <li class="right"><a href="#about">login</a></li>
+<!--  <li class="right"><a href="#about">login</a></li>-->
 </ul>
+	
+<button class="open-button" onclick="openForm()">login</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+	
 	
 <!--INTRO AREA-->	
 	
@@ -41,6 +59,47 @@
 </div>
 		
 </section>
+	
+	
+	
+<section id="signup">
+	
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+	
+	<form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+	</div>
+	</section>	
+	
+	
 	
 	
 <section id="features">
@@ -75,7 +134,7 @@
 		<a href="#!">
 		<h2>SYMPTOMS AND ANALYSIS</h2>
 			<div class="content">
-			<p>Clean simple and easy graphs, that allow you to sort through specific periods of time. Available for download and instantly share with your medical profesional. </p> 
+			<p>Clean simple and easy graphs, that allow you to sort through specific periods of time. All of your progress is available for download and can be instantly shared with your medical profesional. </p> 
 <!--			<p>TEXT HERE</p>-->
 			</div>
 		</a>
