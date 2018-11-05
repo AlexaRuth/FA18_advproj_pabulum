@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 		/* FONT REFRENCE ONLY:: 
@@ -28,7 +27,6 @@ body{
 h1{
 		font-family: Montserrat', sans-serif;
 		font-size: 6em;
-		text-align: center;
 		margin:auto;
 		color: black;
 		}
@@ -38,7 +36,6 @@ h2{
 		font-size: 1em;
 		font-style: 700;
 		color: white;
-		text-align: center;
 		}
 
 p{
@@ -48,7 +45,6 @@ p{
 		font-size: 1em;
 		padding: 25px;
 		margin-bottom: 5px;
-		text-align: center;
 		}
 
 a h1{
@@ -72,6 +68,17 @@ a h1:hover {
 img{
 		height: 25%;
 		}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
 
 /*NAVIGATION*/
 
@@ -148,23 +155,11 @@ ul.topnav li a {
 
 /*BACKGROUND ELEMENTS*/
 
-/*
-.topbackground{
-	 max-height: 675px;
-	 max-width: 100%;
-		background-color: aqua;
-		border: 2px solid red;
-		padding: 10px;
-		border-bottom-right-radius: 300px;
-}
-*/
-
 
 /*FEATURES*/
 
 #features{
 	   margin-top: 150px;
-/*				border: solid 3pt red;*/
 				height:1200px;
 				}
 
@@ -192,13 +187,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     position: relative;
     display: block;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 100px;
     overflow: hidden;
     }
 
 .tiles article > .image img {
     display: block;
     width: 100%;
+	margin: auto;
     }
 
 .tiles article > .image:before {
@@ -261,27 +257,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
     }
 
-.tiles article.style1 > .image:before {
-    background-color: mediumvioletred;
-    }
-
-.tiles article.style2 > .image:before {
-    background-color: red;
-    }
-
-.tiles article.style3 > .image:before {
-    background-color: yellow;
-    }
-
 .tiles article.style4 > .image:before {
     background-color: black;
     }
-
-.tiles article.style5 > .image:before {
-    background-color: white;
-    }
-
-
 
 
 body:not(.is-touch) .tiles article:hover > .image {
@@ -289,7 +267,7 @@ body:not(.is-touch) .tiles article:hover > .image {
     }
 
 body:not(.is-touch) .tiles article:hover > .image:before {
-    background-color: #333333;
+    background-color: #2E364D;
     opacity: 0.35;
     }
 
@@ -445,8 +423,8 @@ body.is-touch .tiles article .content {
 #signup{
 	z-index: 2px;
 	position: absolute;
-	top: 600px;
-	right: 250px;
+	top: 500px;
+ left: 150px;
 }
 
 
@@ -467,25 +445,25 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 /* Set a style for all buttons */
-button {
-    background-color: green;
+#signup button {
+    background-color: deeppink;
     color: white;
     padding: 14px 20px;
+    border-radius: 20px;
     margin: 8px 0;
-    border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
 }
 
 button:hover {
-    opacity:1;
+    opacity:3;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
-    background-color: darkred;
+    background-color: red;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -509,7 +487,7 @@ button:hover {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color:  #1349CD;
+    background-color:  grey;
     padding-top: 50px;
 }
 
@@ -552,24 +530,27 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    
 	.cancelbtn, .signupbtn {
 		width: 100%; }
 
 
 
 
-
-
 /*FOOTER*/
 
-.footer {
-    position: fixed;
+footer {    
+				position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: white;
     color: white;
-    text-align: center;
 }
 
+footer.ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+	}
