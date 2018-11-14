@@ -1,0 +1,273 @@
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+		/* FONT REFRENCE ONLY:: 
+		font-family: 'Montserrat', sans-serif;
+		*/
+
+
+*{
+		box-sizing: border-box;
+		}
+
+
+/*BODY*/
+body{
+			margin: 0;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1em;
+			color: darkgrey;
+			border: solid white 5px;
+/*	height: 200px;*/
+   background-color: #1349CD; /* For browsers that do not support gradients */
+   background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
+			}
+
+/*ELEMENTS*/
+h1{
+		font-family: Montserrat', sans-serif;
+		font-size: 6em;
+		margin:auto;
+		color: black;
+		}
+
+h2{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		font-style: 700;
+		color: white;
+		}
+
+p{
+		font-family: 'Montserrat', sans-serif;
+		color: white;
+		font-style: 300;
+		font-size: 1em;
+		padding: 25px;
+		margin-bottom: 5px;
+		}
+
+a h1{
+		color: black;
+		}
+
+a h1:link {
+ 	text-decoration: none;
+		}
+
+a h1:visited {
+		color: lightgrey;
+		text-decoration: none;
+		}
+
+a h1:hover {
+		color: red;
+		text-decoration: none;
+		}
+
+img{
+		height: 25%;
+		}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+
+
+/*FEATURES*/
+
+#features{
+	   margin-top: 150px;
+				height:1200px;
+				}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: -2.5em 0 0 -2.5em;
+    }
+
+.tiles article {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: calc(33.33333% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+    }
+
+.tiles article > .image {
+    transition: transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+
+.tiles article > .image img {
+    display: block;
+    width: 100%;
+				margin: auto;
+    }
+
+.tiles article > .image:before {
+    pointer-events: none;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;
+    opacity: 0.8;
+    }
+
+.tiles article > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
+    }
+
+.tiles article > a > :last-child {
+    margin: 0;
+    }
+
+.tiles article > a:hover {
+    color: mediumvioletred;
+    }
+
+.tiles article > a h2 {
+    margin: 0;
+    }
+
+.tiles article > a .content {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+    }
+
+.tiles article > a .content > :last-child {
+    margin-bottom: 0;
+    }
+
+.tiles article.style4 > .image:before {
+    background-color: darkblue;
+    }
+
+
+body:not(.is-touch) .tiles article:hover > .image {
+    transform: scale(1.1);
+    }
+
+body:not(.is-touch) .tiles article:hover > .image:before {
+    background-color: black;
+    opacity: 0.35;
+    }
+
+body:not(.is-touch) .tiles article:hover > .image:after {
+    opacity: 0;
+    }
+
+body:not(.is-touch) .tiles article:hover .content {
+    max-height: 15em;
+    opacity: 1;
+    }
+
+* + .tiles {
+    margin-top: 2em;
+    }
+
+body.is-loading .tiles article {
+    transform: scale(0.9);
+    opacity: 0;
+    }
+
+body.is-touch .tiles article .content {
+    max-height: 15em;
+    opacity: 1;
+    }
+
+@media screen and (max-width: 1280px) {
+    .tiles {
+    margin: -1.25em 0 0 -1.25em;
+    }
+
+    .tiles article {
+    width: calc(33.33333% - 1.25em);
+    margin: 1.25em 0 0 1.25em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .tiles {
+    margin: -2.5em 0 0 -2.5em;
+    }
+
+    .tiles article {
+    width: calc(50% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .tiles {
+    margin: -1.25em 0 0 -1.25em;
+    }
+
+    .tiles article {
+    width: calc(50% - 1.25em);
+    margin: 1.25em 0 0 1.25em;
+    }
+
+    .tiles article:hover > .image {
+    transform: scale(1.0);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .tiles {
+    margin: 0;
+    }
+    
+    .tiles article {
+    width: 100%;
+    margin: 1.25em 0 0 0;
+    }
+}
+
+
+
+
