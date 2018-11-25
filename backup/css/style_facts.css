@@ -16,32 +16,39 @@ body{
 			margin: 0;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1em;
-			color: darkgrey;
+			color: grey;
 			border: solid white 5px;
-/*	height: 200px;*/
-   background-color: #1349CD; /* For browsers that do not support gradients */
-   /*background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */*/
-			}
+   background-color: #f7f7f7 /* For browsers that do not support gradients */	
+}
 
 /*ELEMENTS*/
+
 h1{
-		font-family: Montserrat', sans-serif;
-		font-size: 6em;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 4em;
 		margin:auto;
-		color: black;
+	 font-style: 700;
+		color:  grey;
 		}
 
 h2{
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1em;
+		font-size: 1.5em;
 		font-style: 700;
-		color: white;
+		color:  grey;
+		}
+
+h3{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		font-style: 500;
+		color:  grey;
 		}
 
 p{
 		font-family: 'Montserrat', sans-serif;
-		color: white;
-		font-style: 300;
+		color:  grey;
+		font-style: 400;
 		font-size: 1em;
 		padding: 25px;
 		margin-bottom: 5px;
@@ -69,7 +76,12 @@ img{
 		height: 25%;
 		}
 
+ul {
+	list-style: none;
+}
+
 button {
+    background-color: greenyellow;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -78,6 +90,27 @@ button {
     opacity: 0.9;
 }
 
+
+/* BODY TEXT AREAS */
+.title{
+	margin-top: 100px;
+	text-align: center;
+	align-content: center;
+	padding-bottom: 10px;
+}
+
+
+.symptom{
+	margin: auto; 
+	max-width: 800px;
+}
+
+article{
+	background-color: white;
+	margin: 20px;
+	padding: 50px;
+	border-radius: 10px;
+}
 
 
 
@@ -89,7 +122,7 @@ ul.topnav {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-/*	background-color: lightgray;*/
+	 background-color: #2E364D;
 		}
 
 ul.topnav li {float: left;}
@@ -116,7 +149,6 @@ ul.topnav li a {
 
 
 /* LOGIN BUTTON */
-
 
 .open-button {
   background-color: deeppink;
@@ -184,3 +216,23 @@ ul.topnav li a {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+/*FOOTER*/
+
+footer {    
+				position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+}
+
+footer.ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+	}
