@@ -12,6 +12,7 @@
 
 
 /*BODY*/
+
 body{
 			margin: 0;
 			font-family: 'Montserrat', sans-serif;
@@ -86,7 +87,7 @@ button {
 
 #intro{	 
 		height:900px;
-	 max-width: 80%;
+	 	max-width: 80%;
 		background-color: #2E364D;
 		padding: 10px;
 		border-bottom-right-radius: 900px;
@@ -124,13 +125,6 @@ button {
 		}
 
 /*BACKGROUND ELEMENTS*/
-
-
-
-
-
-
-
 
 
 

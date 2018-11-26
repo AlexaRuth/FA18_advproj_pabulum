@@ -1,9 +1,7 @@
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
-        /* FONT REFRENCE ONLY:: 
-        font-family: 'Montserrat', sans-serif;
-        */
+/* FONT REFRENCE ONLY:: font-family: 'Montserrat', sans-serif; */
 
 
 *{
@@ -12,29 +10,32 @@
 
 
 /*BODY*/
+
 body{
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1em;
-            color: darkgrey;
-            border: solid white 5px;
-/*  height: 200px;*/
-   background-color: #1349CD; /* For browsers that do not support gradients */
-   background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
-            }
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: darkgrey;
+        border: solid white 5px;
+        /*  height: 200px;*/
+        background-color: #1349CD; /* For browsers that do not support gradients */
+        background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
+        }
 
 /*ELEMENTS*/
+
 h1{
-        font-family: Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 6em;
         margin:auto;
         color: black;
+        font-style: 700;
         }
 
 h2{
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
-        font-style: 700;
+        font-style: 500;
         color: white;
         }
 
@@ -69,16 +70,46 @@ img{
         height: 25%;
         }
 
-button {
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
+
+/* MEDIA QUERIES FOR BASIC LAYOUT */
+@media screen and (max-width: 768px) {
+
+                body{
+                    margin: 0;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1em;
+                    color: darkgrey;
+                    border: solid white 5px;
+                    /*  height: 200px;*/
+                    background-color: #1349CD; /* For browsers that do not support gradients */
+                    background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
+                    }
 
 
+                h1{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 6em;
+                    margin:auto;
+                    color: black;
+                    font-style: 700;
+                    }
+
+                h2{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1em;
+                    font-style: 500;
+                    color: white;
+                    }
+
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-style: 300;
+                    font-size: 1em;
+                    padding: 25px;
+                    margin-bottom: 5px;
+                    }
+                }
 
 
 
@@ -86,19 +117,18 @@ button {
 
 #intro{  
         height:900px;
-     max-width: 80%;
+        max-width: 80%;
         background-color: #2E364D;
         padding: 10px;
         border-bottom-right-radius: 900px;
-        }
+    }
 
 .mockphone img{
         height: 800px;
         width: auto;
         float: right;
         margin-top: 50px;
-        }
-
+    }
 
 #info1 h2 {
         padding: 3px;
@@ -122,7 +152,59 @@ button {
         left:150px;
         z-index: 1px;
         max-width: 500px;
+    }
+
+
+
+/* MEDIA QUERIES FOR INTRO SECTION */
+@media screen and (max-width: 768px) {
+
+    #intro{  
+        max-height: 100%;
+        max-width: 90%;
+        border-bottom-right-radius: 650px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .mockphone img{
+        height: 500px;
+        margin-top: 350px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #info1 h2 {
+        padding: 3px;
+        font-size: 3em;
+        text-align: left;
+        line-height: 1.25em;
+        position: absolute;
+        top: 50px;
+        left:150px;
+        z-index: 1px;
+        max-width: 500px;
+     }
+}
+
+
+@media screen and (max-width: 768px) {
+    #info1 p {
+        padding: 3px;
+        font-size: 1em;
+        text-align: center;
+        line-height: 3em;
+        position: absolute;
+        top: 250px;
+        left:150px;
+        z-index: 1px;
+        max-width: 500px;
         }
+}
+
+
 
 
 
@@ -136,116 +218,141 @@ button {
 /* SIGN UP FORM */
 
 #signup{
-	z-index: 2px;
-	position: absolute;
-	top: 500px;
- left: 150px;
-}
+        z-index: 2px;
+        position: absolute;
+        top: 500px;
+        left: 150px;
+        }
+
+#signup h1{
+        color:grey;
+        font-size: 50px;
+        font-style: 500;
+        margin-left: 20px;
+        margin-top: 20px;
+        }
+
+.container h2{
+        color:grey;
+        font-size: 16px;
+        font-style: 300;
+        }
+
+#signup p{
+        color:dimgrey;
+        }
 
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-		width: 100%;
-		padding: 15px;
-		margin: 5px 0 22px 0;
-		display: inline-block;
-		border: none;
-		background: #f1f1f1;
-}
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for all buttons */
-#signup button {
-    background-color: deeppink;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 20px;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
+        background-color: #ddd;
+        outline: none;
+        }
 
 button:hover {
-    opacity:3;
-}
+        opacity:3;
+        }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: red;
-}
+.signupbtn {
+        padding: 14px 20px;
+        background-color: green;        
+        }
+
+/* Extra styles for the cancel button */
+.cancelbtn{
+        padding: 14px 20px;
+        background-color: red;
+        }
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
+        float: left;
+        width: 50%;
+        }
+
+/* Set a style for all buttons */
+#signup button {
+        background-color: *;
+        color: black;
+        padding: 14px 20px;
+        border-radius: 10px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        }
 
 /* Add padding to container elements */
 .container {
-    padding: 16px;
-}
+        padding: 16px;
+        }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color:  grey;
-    padding-top: 50px;
-}
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background: #ffffff url("../images/agriculture-basket-beets_2.jpg") no-repeat fill;
+        padding-top: 50px;
+        }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 75%; /* Could be more or less, depending on screen size */
-}
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        border-radius: 10px;
+        width: 75%; /* Could be more or less, depending on screen size */
+        }
 
 /* Style the horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
- 
+hr{
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+        }
+
 /* The Close Button (x) */
 .close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-}
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+        }
 
 .close:hover,
 .close:focus {
-    color: magenta;
-    cursor: pointer;
-}
+        color: red;
+        cursor: pointer;
+        }
 
 /* Clear floats */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+        content: "";
+        clear: both;
+        display: table;
+        }
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-	.cancelbtn, .signupbtn {
-		width: 100%; }
+        .cancelbtn, .signupbtn {
+        width: 100%; }
 
 
