@@ -17,10 +17,21 @@ body{
         font-size: 1em;
         color: darkgrey;
         border: solid white 5px;
-        /*  height: 200px;*/
+        width: 1445px;
         background-color: #1349CD; /* For browsers that do not support gradients */
         background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
         }
+    /*@media screen and (max-width: 480px) {
+        body {
+        width: 479px; } }*/
+   /* @media screen and (min-width: 640px) {
+        body {
+        width: 650px; } }
+    @media screen and (min-width: 820px) {
+        body {
+        width: 960px; } }*/
+
+
 
 /*ELEMENTS*/
 
@@ -53,7 +64,7 @@ a h1{
         }
 
 a h1:link {
-    text-decoration: none;
+        text-decoration: none;
         }
 
 a h1:visited {
@@ -72,15 +83,15 @@ img{
 
 
 /* MEDIA QUERIES FOR BASIC LAYOUT */
-@media screen and (max-width: 768px) {
+
+        @media screen and (max-width: 480px) {
 
                 body{
                     margin: 0;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
-                    color: darkgrey;
+                    font-size: .75em;
                     border: solid white 5px;
-                    /*  height: 200px;*/
+                    width: 470px;
                     background-color: #1349CD; /* For browsers that do not support gradients */
                     background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
                     }
@@ -88,7 +99,7 @@ img{
 
                 h1{
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 6em;
+                    font-size: 3em;
                     margin:auto;
                     color: black;
                     font-style: 700;
@@ -96,7 +107,7 @@ img{
 
                 h2{
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 1em;
+                    font-size: .5em;
                     font-style: 500;
                     color: white;
                     }
@@ -105,13 +116,14 @@ img{
                     font-family: 'Montserrat', sans-serif;
                     color: white;
                     font-style: 300;
-                    font-size: 1em;
+                    font-size: .25em;
                     padding: 25px;
                     margin-bottom: 5px;
                     }
                 }
 
-
+        
+        
 
 /*INTRO SECTION*/
 
@@ -157,62 +169,45 @@ img{
 
 
 /* MEDIA QUERIES FOR INTRO SECTION */
-@media screen and (max-width: 768px) {
 
-    #intro{  
-        max-height: 100%;
-        max-width: 90%;
-        border-bottom-right-radius: 650px;
-    }
-}
+        @media screen and (max-width: 480px) {
 
+            #intro{  
+                    max-height: 80%;
+                    max-width: 90%;
+                    border-bottom-right-radius: 450px;
+                }
 
-@media screen and (max-width: 768px) {
-    .mockphone img{
-        height: 500px;
-        margin-top: 350px;
-    }
-}
+            .mockphone img{
+                    height: 350px;
+                    margin-top: 350px;
+                }
 
-
-@media screen and (max-width: 768px) {
-    #info1 h2 {
-        padding: 3px;
-        font-size: 3em;
-        text-align: left;
-        line-height: 1.25em;
-        position: absolute;
-        top: 50px;
-        left:150px;
-        z-index: 1px;
-        max-width: 500px;
-     }
-}
+            #info1 h2 {
+                    padding: 3px;
+                    font-size: 3em;
+                    text-align: left;
+                    line-height: 1.25em;
+                    position: absolute;
+                    top: 50px;
+                    left:150px;
+                    z-index: 1px;
+                    max-width: 500px;
+                 }
 
 
-@media screen and (max-width: 768px) {
-    #info1 p {
-        padding: 3px;
-        font-size: 1em;
-        text-align: center;
-        line-height: 3em;
-        position: absolute;
-        top: 250px;
-        left:150px;
-        z-index: 1px;
-        max-width: 500px;
-        }
-}
-
-
-
-
-
-
-
-
-
-
+            #info1 p {
+                    padding: 3px;
+                    font-size: 1em;
+                    text-align: center;
+                    line-height: 3em;
+                    position: absolute;
+                    top: 250px;
+                    left:150px;
+                    z-index: 1px;
+                    max-width: 500px;
+                    }
+            }
 
 
 /* SIGN UP FORM */

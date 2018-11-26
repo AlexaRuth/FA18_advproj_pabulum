@@ -1,0 +1,21 @@
+.menu-controller-checkbox { display: none; }
+
+.dropdown {
+
+  .menu-controller-checkbox ~ ul { transition: max-height .5s ease; }
+
+  .menu-controller-checkbox:checked ~ ul { max-height: 1000px; }
+
+  .menu-controller-checkbox ~ .menu-controller-label { transition: margin-bottom .5s ease; }
+
+  .menu-controller-checkbox:checked ~ .menu-controller-label { margin-bottom: $line-height1; }
+
+}
+
+.slide-left {
+
+  .menu-controller-checkbox ~ ul { transition: left .5s ease; }
+
+  .menu-controller-checkbox:checked ~ ul { left: 0; }
+
+}
