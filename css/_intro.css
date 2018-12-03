@@ -1,3 +1,4 @@
+
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
@@ -6,6 +7,7 @@
 
 *{
         box-sizing: border-box;
+        border: solid white 2px;
         }
 
 
@@ -16,20 +18,25 @@ body{
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
         color: darkgrey;
-        border: solid white 5px;
-        width: 1445px;
+        width: 1444px;
+        margin: auto;
+        border: solid red 5px;
         background-color: #1349CD; /* For browsers that do not support gradients */
         background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
         }
-    /*@media screen and (max-width: 480px) {
+
+    @media screen and (max-width: 460px) {
         body {
-        width: 479px; } }*/
-   /* @media screen and (min-width: 640px) {
+        width: 450px; } 
+    }
+    @media screen and (min-width: 640px) {
         body {
-        width: 650px; } }
+        width: 650px; } 
+    }
     @media screen and (min-width: 820px) {
         body {
-        width: 960px; } }*/
+        width: 960px; } 
+    }
 
 
 
@@ -84,16 +91,13 @@ img{
 
 /* MEDIA QUERIES FOR BASIC LAYOUT */
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 455px) {
 
                 body{
-                    margin: 0;
+                    margin: auto;
                     font-family: 'Montserrat', sans-serif;
                     font-size: .75em;
-                    border: solid white 5px;
-                    width: 470px;
-                    background-color: #1349CD; /* For browsers that do not support gradients */
-                    background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
+                    width: 460px;
                     }
 
 
@@ -138,9 +142,10 @@ img{
 .mockphone img{
         height: 800px;
         width: auto;
-        float: right;
+        /*float: right;*/
         margin-top: 50px;
     }
+
 
 #info1 h2 {
         padding: 3px;
@@ -170,43 +175,45 @@ img{
 
 /* MEDIA QUERIES FOR INTRO SECTION */
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 460px) {
 
             #intro{  
-                    max-height: 80%;
-                    max-width: 90%;
-                    border-bottom-right-radius: 450px;
+                    max-height: 50%;
+                    max-width: 100%;
+                    border-bottom-right-radius: 150px;
                 }
 
             .mockphone img{
                     height: 350px;
+                    width: auto;
                     margin-top: 350px;
                 }
 
             #info1 h2 {
                     padding: 3px;
                     font-size: 3em;
-                    text-align: left;
+                    text-align: center;
                     line-height: 1.25em;
-                    position: absolute;
-                    top: 50px;
-                    left:150px;
+                    margin: auto;
+                    top: 50px;    
                     z-index: 1px;
-                    max-width: 500px;
-                 }
+                }
 
 
             #info1 p {
                     padding: 3px;
                     font-size: 1em;
                     text-align: center;
-                    line-height: 3em;
+                    line-height: 1.25em;
+                    top: 250px;
+                }
+
+
+            #signup .main_button button {
+                    margin: auto;
                     position: absolute;
                     top: 250px;
-                    left:150px;
-                    z-index: 1px;
-                    max-width: 500px;
-                    }
+                }
             }
 
 
@@ -288,6 +295,11 @@ button:hover {
         opacity: 0.9;
         }
 
+#signup .main_button button {
+        background-color: magenta;
+        color: black;
+        }
+
 /* Add padding to container elements */
 .container {
         padding: 16px;
@@ -303,7 +315,7 @@ button:hover {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
-        background: #ffffff url("../images/agriculture-basket-beets_2.jpg") no-repeat fill;
+        background: #ffffff url("../images/agriculture-basket-beets_2.jpg") fill;
         padding-top: 50px;
         }
 
