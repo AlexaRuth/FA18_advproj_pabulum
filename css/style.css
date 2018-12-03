@@ -14,11 +14,11 @@
 /*BODY*/
 
 body{
-			margin: 0;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1em;
-			color: darkgrey;
-			border: solid white 5px;
+		margin: 0;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		color: darkgrey;
+		border: solid white 5px;
 
 /*	height: 200px;*/
    background-color: #1349CD; /* For browsers that do not support gradients */
@@ -110,7 +110,7 @@ button {
 		left:150px;
 		z-index: 1px;
 		max-width: 600px;
-	 }
+	}
 
 #info1 p {
 		padding: 3px;
@@ -122,7 +122,7 @@ button {
 		left:150px;
 		z-index: 1px;
 		max-width: 500px;
-		}
+	}
 
 /*BACKGROUND ELEMENTS*/
 
@@ -130,14 +130,14 @@ button {
 
 /*FOOTER*/
 
-footer {    
-				position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: white;
-}
+/*footer {    
+		position: fixed;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background-color: white;
+	    color: white;
+	}
 
 footer.ul{
 		list-style-type: none;
@@ -145,4 +145,4 @@ footer.ul{
 		padding: 0;
 		overflow: hidden;
 
-	}
+	}*/
